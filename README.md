@@ -13,7 +13,7 @@ This repository serves as an index of my most significant academic and personal 
 
 # Project Portfolio
 - [Board Game Café](Project%20Portfolio/Board%20Game%20Cafe/README.md)
-- [Yatzy Web Application](Project%20Portfolio/Yatzy%20web%20application/README.md)
+- [Yatzy Web Application](Project%20Portfolio/Yatzy%20Web%20Application/README.md)
 - Link 3
 
 # Featured Project
