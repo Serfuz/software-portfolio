@@ -18,11 +18,12 @@ A full-stack web application developed by a six-person team as part of the Unive
 6 computer engineering students.
 
 ## My Contributions
-Designed and developed the Game Catalog Management bounded context.
-Researched and implemented PostgreSQL persistence concepts.
-Worked with Entity Framework data access patterns.
-Introduced and implemented MediatR events.
-Acted as Product Owner responsible for main branch stability and merge review.
+- Designed and developed the Game Catalog Management bounded context.
+- Designed and developed the Admin Dashboard
+- Researched and implemented PostgreSQL persistence concepts.
+- Worked with Entity Framework data access patterns.
+- Introduced and implemented MediatR events.
+- Acted as Product Owner responsible for main branch stability and merge review.
 
 ## What I Learned
 - Domain-Driven Design
@@ -31,7 +32,8 @@ Acted as Product Owner responsible for main branch stability and merge review.
 - Team-scale Git workflows
 - CI/CD practices
 
-## Implemented Features
+## Project Overview
+### Implemented Features
 - User authentication and authorization for customers, stewards, and admins, including JWT-based login, protected routes, and forced password-change flows for first-time access.
 - Game catalog management with creating, viewing, editing, and removing board games, along with game-copy tracking and rating/review support.
 - Reservation lifecycle management for creating reservations, checking availability, editing details, assigning tables, seating guests, handling no-shows, and canceling reservations.
@@ -40,7 +42,7 @@ Acted as Product Owner responsible for main branch stability and merge review.
 - Cafe floor and table management with customer-facing floor planning and steward tooling for reservation oversight and service operations.
 - Admin and steward dashboard functionality for user management, policy configuration, and operational monitoring of the board game café.
 
-## Architecture and Structure
+### Architecture and Structure
 - The backend is organized as a modular monolith using .NET with distinct bounded contexts such as Account Management, Game Catalog Management, Reservation Management, Payment, Notifications, and Cafe Floor Management.
 - Each feature area is separated into domain, application, infrastructure, and endpoint layers, following a vertical-slice and domain-driven design approach.
 - Data access is handled with multiple Entity Framework DbContexts connected to a shared PostgreSQL database, with separate schemas and migrations for each context.
@@ -49,7 +51,7 @@ Acted as Product Owner responsible for main branch stability and merge review.
 - The frontend is built with React and TypeScript, with route-based pages for customers, stewards, and administrators, along with shared auth and notification components.
 - Docker and docker-compose are used to run the full stack consistently, including the frontend, backend, and supporting services.
 
-## What this project Demonstrates
+### What this project Demonstrates
 - A realistic full-stack software engineering workflow from requirement-driven design to implementation, testing, and deployment.
 - How a modular monolith can scale cleanly for a business domain without the overhead of a microservice architecture.
 - Strong separation of concerns between business logic, persistence, API endpoints, and UI layers.
