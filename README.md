@@ -14,7 +14,7 @@ This repository serves as an index of my most significant academic and personal 
 # Project Portfolio
 - [Board Game Café](Project%20Portfolio/Board%20Game%20Cafe)
 - [Yatzy Web Application](Project%20Portfolio/Yatzy%20Web%20Application)
-- Link 3
+- [Early Excel Projects](Project%20Portfolio/Early%20Excel%20Projects)
 
 # Featured Project
 
