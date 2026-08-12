@@ -1,9 +1,9 @@
 # YATZY - Web-Based Local Multiplayer Game
 
 ## Overview
-This project is a browser-based Yatzy game built as a full-stack web application for a university software engineering assignment. The game is designed as a local hot-seat experience (2-4 players) where users can start new games, continue from saved state, and track highscores.
+YATZY is a full-stack web application developed as part of the University of Stavanger course Webprogramming (DAT310). Built by a two-person team and awarded grade A, the project delivers a local hot-seat Yatzy experience for 2-4 players with authentication, saved games, and highscores.
 
-The application combines server-side user/session handling with client-side game logic. Game state is persisted in browser cookies for all players, and authenticated users can also save and reload games from the database.
+The solution combines browser-side game logic with server-side persistence so users can continue games across sessions and manage their saved progress when logged in.
 
 ## Technologies
 - Python
@@ -19,24 +19,34 @@ The application combines server-side user/session handling with client-side game
 ## Team Size
 2 computer engineering students.
 
-## Implemented Features
-- Login and registration with server-side validation.
-- Password hashing and authenticated session handling.
-- Yatzy gameplay in the browser with dice rolling and scoring logic.
+## Key Features
+- Login and registration with client-side and server-side validation.
+- Secure password hashing and session-based authentication.
+- Browser-based Yatzy gameplay with dice rolling and scoring logic.
 - New game flow for 2-4 players.
-- Save, load, update, and delete game saves for logged-in users.
-- Highscore list with automatic update when games are finished.
-- Frontend form validation and user feedback for invalid input.
-- Responsive layout adjustments for smaller screens.
+- Save, load, update, and delete game saves for authenticated users.
+- Highscore table with automatic updates when games are completed.
+- Responsive layout for desktop and smaller screens.
 
-## Architecture and Structure
-- Flask app entry point in `YATZY/app.py` with route handlers and validation logic.
-- Database access and SQL operations separated into `YATZY/db_functions.py`.
-- Frontend behavior split across `YATZY/static/script.js` (UI/auth/panels) and `YATZY/static/board.js` (game logic).
-- UI composed with reusable templates in `YATZY/templates/`.
+## My Contributions
+- Built and iterated the Flask backend, including routes for authentication, session lookup, highscores, and full save-game lifecycle (create/read/update/delete).
+- Implemented server-side validation for login and registration, including password policy, email format checks, and structured HTTP status responses.
+- Developed the SQLite data access layer, including user handling, game-save persistence, highscore updates, and database initialization with seed data.
+- Implemented password hashing/verification with Werkzeug and enforced session-based access control for protected operations.
+- Integrated frontend and backend flows with asynchronous API calls, form UX validation, my-games listing/sorting/open/delete actions, and highscore rendering.
+- Contributed to gameplay persistence and board-state handling, including cookie-based resume behavior.
+- Maintained and improved project documentation and testing guidance.
 
-## What This Project Demonstrates
-- Building a complete CRUD-capable web app with authentication.
-- Combining client-side interactivity with server-side persistence.
-- Designing and using REST-like endpoints with meaningful HTTP status codes.
-- Structuring a student project with clear separation of backend, database, and frontend responsibilities.
+## What I Learned
+- End-to-end design and implementation of a Flask + SQLite web application.
+- Practical API design using REST-style routes, JSON contracts, and clear HTTP status semantics.
+- Applied authentication and authorization patterns using hashed passwords and validated user sessions.
+- Trade-offs between client-side state (cookies) and server-side persistence (database saves) in real user flows.
+- Debugging and iterative delivery across backend logic, frontend behavior, and data model changes in a team setting.
+- Better collaboration habits through consistent Git commits and living project documentation.
+
+## Architecture
+- Backend built with Flask for routing, validation, authentication, and API responses.
+- Data layer separated into dedicated SQLite access functions for clear CRUD responsibilities.
+- Frontend separated between interface/API communication logic and gameboard gameplay logic.
+- Template-driven UI structure with reusable layout components.
