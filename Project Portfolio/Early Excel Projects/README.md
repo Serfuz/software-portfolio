@@ -1,5 +1,4 @@
 # Early Excel Projects
-
 This folder contains a collection of early spreadsheet projects created while I was developing my analytical, problem-solving, and data-organizing skills. These workbooks were built to automate repetitive tasks, structure information, support decision-making, and explore how spreadsheets can be used as practical tools beyond basic calculations. They reflect my early interest in using data to solve real-world problems and improve efficiency in both professional and personal contexts.
 
 ## Timekontroll 2014 v2.xlsx
