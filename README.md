@@ -12,7 +12,7 @@ I am a Computer Engineering student at the University of Stavanger with interest
 This repository serves as an index of my most significant academic and personal software projects.
 
 # Project Portfolio
-- [Board Game Café](Project%20Portfolio/Board%20Game%20Cafe/Readme.md)
+- [Board Game Café](Project%20Portfolio/Board%20Game%20Cafe/README.md)
 - Link 2
 - Link 3
 
